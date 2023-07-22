@@ -1,4 +1,4 @@
-package es.cic;
+package es.cic.prueba;
 
 public class Prueba {
 
