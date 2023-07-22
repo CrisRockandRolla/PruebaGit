@@ -1,6 +1,5 @@
-package es.cic;
+package es.cic.prueba;
 
-import es.cic.prueba.Prueba;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
