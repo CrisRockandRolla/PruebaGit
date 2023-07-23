@@ -2,11 +2,10 @@ package es.cic.prueba;
 
 public class Prueba {
 
-    String id;
-    String nombre;
-    String apellidos;
-
-    int edad;
+    private String id;
+    private String nombre;
+    private String apellidos;
+    private int edad;
 
     public Prueba(String id, String nombre, String apellidos, int edad) {
         this.id = id;
