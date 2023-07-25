@@ -2,23 +2,23 @@ package es.cic.prueba.excepciones;
 
 import es.cic.prueba.Figura;
 
-public class LienzoException extends RuntimeException {
+public class FiguraException extends RuntimeException {
 
     private Figura figura;
 
-    public LienzoException() {
+    public FiguraException() {
     }
 
-    public LienzoException(String message) {
+    public FiguraException(String message) {
         super(message);
     }
 
-    public LienzoException(String message, Figura figura) {
+    public FiguraException(String message, Figura figura) {
         super(message);
         this.figura = figura;
     }
 
-    public LienzoException(String message, Throwable cause, Figura figura) {
+    public FiguraException(String message, Throwable cause, Figura figura) {
         super(message, cause);
         this.figura = figura;
     }

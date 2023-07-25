@@ -17,6 +17,10 @@ public abstract class Figura {
         this.color = color;
     }
 
+    String getTipo() {
+        return getClass().getSimpleName();
+    }
+
     public long getId() {
         return id;
     }
@@ -39,5 +43,13 @@ public abstract class Figura {
 
     public void setColor(Color color) {
         this.color = color;
+    }
+
+    @Override
+    public String toString() {
+        return getClass().getSimpleName() +
+                "[ id=" + id +
+                ", puntoAplicacion=" + puntoAplicacion +
+                ", color=" + color;
     }
 }

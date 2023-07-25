@@ -1,13 +1,16 @@
-package es.cic.prueba.util;public class Validacoines{private final es.cic.prueba.Lienzo lienzo;	public Validacoines(es.cic.prueba.Lienzo lienzo)	{		this.lienzo = lienzo;	}/*
-    ========================================================================
-                              VALIDACIONES
-    ========================================================================
-    */
-    public boolean existeId(long id) {
+package es.cic.prueba.util;
+
+import es.cic.prueba.Lienzo;
+
+public class ValidacionesLienzo {
+
+
+    public static boolean existeId(long id, Lienzo lienzo) {
         return lienzo.getFiguras().stream().anyMatch(figura -> figura.getId() == id);
-    }public boolean noEstaDentroLimites(es.cic.prueba.Posicion posicion) {
-        return !(posicion.getCoordenadaX() >= lienzo.getLimiteInferior().getCoordenadaX()) || !(posicion.getCoordenadaX() <= lienzo.getLimiteSuperior().getCoordenadaX())
-                || !(posicion.getCoordenadaY() >= lienzo.getLimiteInferior().getCoordenadaY()) || !(posicion.getCoordenadaY() <= lienzo.getLimiteSuperior().getCoordenadaY());
-    }public boolean esPositivo() {
-        return false;
-    }}
+    }
+
+
+    public static boolean noEsPositivo(double numero) {
+        return numero <= 0;
+    }
+}

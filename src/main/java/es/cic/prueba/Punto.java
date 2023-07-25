@@ -10,4 +10,10 @@ public class Punto extends Figura {
     public Punto(long id, Posicion puntoAplicacion, Color color) {
         super(id, puntoAplicacion, color);
     }
+
+
+    @Override
+    public String toString() {
+        return super.toString() + "]";
+    }
 }
