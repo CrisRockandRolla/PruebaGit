@@ -28,4 +28,11 @@ public class Posicion {
     public void setCoordenadaY(double coordenadaY) {
         this.coordenadaY = coordenadaY;
     }
+
+    @Override
+    public String toString() {
+        return "[" + coordenadaX +
+                "," + coordenadaY +
+                "]";
+    }
 }
