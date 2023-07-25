@@ -9,8 +9,8 @@ public class Cuadrado extends Figura {
     public Cuadrado() {
     }
 
-    public Cuadrado(Posicion puntoAplicacion, Color color, double lado) {
-        super(puntoAplicacion, color);
+    public Cuadrado(long id, Posicion puntoAplicacion, Color color, double lado) {
+        super(id, puntoAplicacion, color);
         this.lado = lado;
     }
 }

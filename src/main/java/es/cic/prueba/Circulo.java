@@ -8,8 +8,8 @@ public class Circulo extends Figura {
     public Circulo() {
     }
 
-    public Circulo(Posicion puntoAplicacion, Color color, double radio) {
-        super(puntoAplicacion, color);
+    public Circulo(long id, Posicion puntoAplicacion, Color color, double radio) {
+        super(id, puntoAplicacion, color);
         this.radio = radio;
     }
 }

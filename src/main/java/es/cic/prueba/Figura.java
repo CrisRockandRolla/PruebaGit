@@ -4,15 +4,25 @@ import java.awt.*;
 
 public abstract class Figura {
 
+    private long id;
     private Posicion puntoAplicacion;
     private Color color;
 
     public Figura() {
     }
 
-    public Figura(Posicion puntoAplicacion, Color color) {
+    public Figura(long id, Posicion puntoAplicacion, Color color) {
+        this.id = id;
         this.puntoAplicacion = puntoAplicacion;
         this.color = color;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     public Posicion getPuntoAplicacion() {

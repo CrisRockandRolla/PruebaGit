@@ -9,8 +9,8 @@ public class Linea extends Figura {
     public Linea() {
     }
 
-    public Linea(Posicion puntoAplicacion, Color color, Posicion puntoFinal) {
-        super(puntoAplicacion, color);
+    public Linea(long id, Posicion puntoAplicacion, Color color, Posicion puntoFinal) {
+        super(id, puntoAplicacion, color);
         this.puntoFinal = puntoFinal;
     }
 }

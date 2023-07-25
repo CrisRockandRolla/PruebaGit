@@ -7,7 +7,7 @@ public class Punto extends Figura {
     public Punto() {
     }
 
-    public Punto(Posicion puntoAplicacion, Color color) {
-        super(puntoAplicacion, color);
+    public Punto(long id, Posicion puntoAplicacion, Color color) {
+        super(id, puntoAplicacion, color);
     }
 }
