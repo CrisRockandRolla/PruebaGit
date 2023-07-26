@@ -43,12 +43,8 @@ public class Lienzo {
                 .setPuntoAplicacion(nuevaPosicion);
     }
 
-    public void cambiarTamano(long id, Redimensionable<Object> figura, Object nuevoTamano) {
-        for (Figura value : figuras) {
-            if (value.getId() == id) {
-                figura.cambiarTamano(nuevoTamano);
-            }
-        }
+    public void cambiarTamano(Redimensionable figura, Object nuevoTamano) {
+        figura.cambiarTamano(nuevoTamano);
     }
 
     public boolean esRedimensionable(Figura figura) {

@@ -1,7 +1,6 @@
 package es.cic.prueba;
 
 import es.cic.prueba.excepciones.FiguraException;
-import es.cic.prueba.excepciones.LienzoException;
 import es.cic.prueba.util.ValidacionesLienzo;
 
 import java.awt.*;
@@ -21,7 +20,8 @@ public class Cuadrado extends Figura implements Redimensionable<Double> {
 
     @Override
     public void cambiarTamano(Double nuevoTamano) {
-        if (noEsValido(nuevoTamano)) throw new LienzoException("Nueva longitud no válida");
+        if (noEsValido(nuevoTamano))
+            throw new FiguraException("El lado de la figura " + getTipo() + " tiene que ser positivo");
         setLado(nuevoTamano);
     }
 
@@ -36,10 +36,5 @@ public class Cuadrado extends Figura implements Redimensionable<Double> {
 
     public void setLado(double lado) {
         this.lado = lado;
-    }
-
-    @Override
-    public String toString() {
-        return super.toString() + ", lado=" + lado + " ]";
     }
 }

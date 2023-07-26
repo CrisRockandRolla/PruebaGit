@@ -1,6 +1,6 @@
 package es.cic.prueba;
 
-import es.cic.prueba.excepciones.LienzoException;
+import es.cic.prueba.excepciones.FiguraException;
 
 import java.awt.*;
 
@@ -18,7 +18,8 @@ public class Linea extends Figura implements Redimensionable<Posicion> {
 
     @Override
     public void cambiarTamano(Posicion nuevaPosicion) {
-        if (noEsValido(nuevaPosicion)) throw new LienzoException("Posicion no válida");
+        if (noEsValido(nuevaPosicion)) throw new FiguraException("Posicion no válida");
+        else this.setPuntoAplicacion(nuevaPosicion);
     }
 
     @Override
@@ -35,8 +36,4 @@ public class Linea extends Figura implements Redimensionable<Posicion> {
         this.puntoFinal = puntoFinal;
     }
 
-    @Override
-    public String toString() {
-        return super.toString() + ", puntoFinal=" + puntoFinal + " ]";
-    }
 }

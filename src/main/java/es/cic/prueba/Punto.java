@@ -11,9 +11,4 @@ public class Punto extends Figura {
         super(id, puntoAplicacion, color);
     }
 
-
-    @Override
-    public String toString() {
-        return super.toString() + "]";
-    }
 }
